@@ -1,0 +1,223 @@
+:root{
+    --blue: #0979db;
+    --pink: #ff1461;
+    --red: #ff141f;
+    --alice: #09dbdb;
+    --orange: #ff4014;
+    --text: #898b84;
+}
+
+@font-face {
+    font-family: exotic;
+    src: url('../fonts/Exotc350-Bd-BT-Bold.ttf');
+}
+@font-face {
+    font-family: felix;
+    src: url('../fonts//FELIXTI.TTF');
+}
+
+*{
+    transition: all .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+body{
+    background: #fff;
+}
+p{
+    color: #898b84;
+}
+.main-header {
+  background: #ff1461;
+  background: var(--blue);
+  background-image: linear-gradient(170deg, var(--blue) 20%, var(--alice));
+  height: auto;
+}
+.host-head {
+  align-items: center !important;
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  flex-flow: row wrap;
+}
+.host-head .brand-name {
+  font-size: 3rem;
+  font-family: exotic;
+}
+.host-hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
+  color: #fff;
+  padding: 4rem 2rem 6rem;
+}
+.hero-left {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2rem;
+  color: #fff;
+}
+.hero-left h4 {
+  font-size: 2.5rem;
+  max-width: 40rem;
+  line-height: 2.2rem;
+  letter-spacing: -1px;
+  font-family: felix !important;
+}
+.hero-left h3 {
+  font-size: 5rem;
+  max-width: 40rem;
+  line-height: 4.5rem;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+  text-overflow: clip;
+  font-family: exotic;
+}
+.hero-left p {
+  padding: 1rem 0;
+  color: #f9faf9;
+  font-weight: 200;
+  line-height: 1.5rem;
+}
+.hero-right {
+  flex: 1;
+}
+.hero-right div {
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  font-size: 10rem;
+  font-weight: 900;
+  color: var(--blue);
+  transform: rotate(5deg);
+  box-shadow: 2px 4px 16px 0 rgba(0, 0, 0, 0.05);
+}
+.light-section {
+    padding: 6rem 2rem;
+    background: #fbfcfd;
+    color: grey;
+}
+.light-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+.light-card {
+    border-radius: 5px;
+    padding: 3rem 2rem;
+    margin: 2rem 1rem;
+    box-shadow: 2px 4px 16px 0 rgba(0, 0, 0, 0.05);
+    background: #fff;
+    display: flex;
+    align-items: center;
+}
+.light-icon {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background: #ff5e00;
+    background: #09dbdb;
+}
+.light-info {
+    flex: 1;
+    padding-left: 1rem;
+}
+.light-title {
+    color:#ff1461;
+}
+.light-subtitle {
+    opacity: .5;
+}
+
+
+/* Review */
+.section-review{
+    background: var(--blue);
+    color: #fff;
+    padding: 5rem 2rem 10rem;
+    position: relative;
+    overflow: hidden;
+}
+.section-review::before{
+    content: '';
+    background:rgba(255, 255, 255, 0.15);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.review-header{
+    padding: 4rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.review-head{
+    font-size: 2.5rem;
+    color: #fff;
+    /* opacity: .8; */
+    letter-spacing: -1px;
+}
+.review-subhead{
+    font-size: 1.2rem;
+    text-align: center;
+    color: #fff;
+    opacity: .8;
+}
+.review-wrap{
+    display: flex;
+}
+.review-card{
+    /* background:rgba(255, 255, 255, 0.15); */
+    flex: 1;
+    border-radius: 10px;
+    padding: 4rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.review-profile{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: #f9faf9;
+    background: url('../images/department1.jpg') center no-repeat;
+    background-size: cover;
+}
+.review-wrap .review-card:nth-child(2) .review-profile, .review-wrap .review-card:nth-child(4) .review-profile{
+    background: url('../images/clothe_basket.jpg') center no-repeat;
+}
+.review-info{
+    padding: 2rem 0;
+}
+.review-title{
+    font-size: 2.5rem;
+    text-align: center;
+    color: #fff;
+}
+.review-text{
+    font-size: 1.1rem;
+    text-align: center;
+    max-width: 70%;
+    margin: 1rem auto;
+    font-weight: 100;
+    color: #fff;
+    line-height: 2rem;
+}
+
+/* FOOTER */
+footer{
+    background: #fff;
+    color: #7e7576;
+    font-weight: 100;
+    font-size: 1.19rem;
+    opacity: .5;
+}
